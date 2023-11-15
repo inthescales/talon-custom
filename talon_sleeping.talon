@@ -1,3 +1,3 @@
 mode: sleep
 -
-^(wake wake)+$: speech.enable()
+^wake (wake)+: speech.enable()
