@@ -1,7 +1,6 @@
 app: windows explorer
 -
 # Window
-# go parent: key(alt-up)
 go (address | path): key(alt-d)
 go search: key(ctrl-e)
 
@@ -10,13 +9,12 @@ copy (address | path):
 	key(ctrl-c)
 
 # New objects
-new folder: key(ctrl-shift-n)
 new text:
 	key(shift-f10)
 	key(w)
 	key(t)
 
 # File commands
+rename: user.file_rename()
+delete: user.file_delete()
 properties: key(alt-enter)
-rename: key(f2)
-delete: key(delete)

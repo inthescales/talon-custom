@@ -1,6 +1,8 @@
 quit: key(escape)
-bop: key(return)
-oops: key(ctrl-z)
+oops: user.undo()
 
+# Line manipulation
 snatch: mimic("cut line")
+
+# Path handling
 path <user.system_path>: insert(system_path)

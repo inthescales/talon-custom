@@ -1,4 +1,4 @@
-from talon import Context, actions
+from talon import Context, Module, actions
 
 # Context matching
 ctx = Context()
@@ -6,6 +6,7 @@ ctx.matches = r"""
 os: mac
 app: sublime_text
 """
+
 
 @ctx.action_class("app")
 class AppActions:
@@ -38,3 +39,8 @@ class UserActions:
 
     def tab_final():
         actions.key("cmd-9")
+
+mod = Module()
+
+@mod.action_class
+class Actions:
