@@ -1,11 +1,10 @@
 Path,Spoken
-~,user
-~,profile
-~/Desktop,desktop
-~/Desktop,desk
-~/Downloads,downloads
-~/Development,development
-~/Development,dev
-~/Desktop/sync,sync
-~/.talon,talon home
-~/.talon/user,talon user
+/Users/robin/,user
+/Users/robin/Desktop,desktop
+/Users/robin/Desktop,desk
+/Users/robin/Downloads,downloads
+/Users/robin/Development,development
+/Users/robin/Development,dev
+/Users/robin/Desktop/sync,sync
+/Users/robin/.talon,talon home
+/Users/robin/.talon/user,talon user
