@@ -9,10 +9,10 @@ app: windows explorer
 
 @ctx.action_class("user")
 class UserActions:
-    def file_rename()
+    def file_rename():
         actions.key("f2")
 
-    def file_delete()
+    def file_delete():
         actions.key("delete")
 
     def new_folder():
