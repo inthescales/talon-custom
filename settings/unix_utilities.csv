@@ -1,7 +1,8 @@
 command,spoken
-awk,ark
+awk
 base64 -d,base sixty four decode
 base64,base sixty four
+cat
 cat,concat
 chmod -R,change mode recurse
 chmod,change mode
@@ -16,9 +17,11 @@ du -h,disk usage human
 du,disk usage
 echo
 false
+find -name,find name
 find
-grep -Hirn,grab here
-grep,grab
+grep -Hirn,grep here
+grep -r, grep recurse
+grep,grep
 head
 htop,harp top
 id -u,I D user
@@ -30,7 +33,8 @@ md5sum,M D five sum
 mkdir,make dear
 paste
 printf,print format
-pwd,work dear
+pwd,work dir
+pwd,current dir
 rev,reverse
 rsync,are sync
 sed,said
@@ -43,12 +47,12 @@ sort -r,sort reverse
 sort -u,sort unique
 sort
 ssh,S S H
-stat
+stat.
 sudo,pseudo
 tail -f,tail follow
 tail
-tee -a,tea append
-tee,tea
+tee -a,tee append
+tee,tee
 touch
 tr -d,translate delete
 tr,translate
