@@ -15,5 +15,8 @@ class UserActions:
     def file_delete():
         actions.key("delete")
 
+    def file_open():
+        actions.key("enter")
+    
     def new_folder():
         actions.key("ctrl-shift-n")

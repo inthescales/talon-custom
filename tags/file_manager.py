@@ -10,5 +10,8 @@ class FileManagerActions:
     def file_delete():
         """Delete a selected file or files"""
 
+    def file_open():
+        """Open the selected file or files"""
+    
     def new_folder():
         """Create a new folder"""

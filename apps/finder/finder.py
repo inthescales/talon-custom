@@ -34,6 +34,9 @@ class UserActions:
     def file_delete():
         actions.key("cmd-delete")
 
+    def file_open():
+        actions.key("cmd-o")
+    
     def new_folder():
         actions.key("shift-cmd-n")
 
