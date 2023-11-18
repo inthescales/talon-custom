@@ -20,6 +20,9 @@ class UserActions:
     def file_copy_path():
         """Copy the path of the selected file"""
 
+    def file_move():
+        """Move a file that has been copied to the clipboard"""
+
 @ctx.action_class("user")
 class UserActions:
     def open_path_dialog():
@@ -42,3 +45,6 @@ class UserActions:
 
     def file_copy_path():
         actions.key("alt-cmd-c")
+
+    def file_move():
+        actions.key("cmd-alt-v")
