@@ -39,3 +39,12 @@ python three: insert("python3 ")
 
 pip: insert("pip ")
 pip three: insert("pip3")
+
+# Lyre's Dictionary
+
+python lyre: insert("python3 lyre.py --test")
+python lyre count <number_small>: insert("python3 lyre.py --test -c {number_small}")
+
+# Sublime Text
+
+sublime: insert("subl ")
