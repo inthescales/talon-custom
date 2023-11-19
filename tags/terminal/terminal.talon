@@ -20,7 +20,6 @@ kill this: key(ctrl-c)
 
 suspend: key(ctrl-z)
 
-foreground:
-    key(f)
-    key(g)
+foreground | resume:
+    insert("fg")
     key(enter)
