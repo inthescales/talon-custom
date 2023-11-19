@@ -38,7 +38,7 @@ python two: insert("python")
 python three: insert("python3 ")
 
 pip: insert("pip ")
-pip three: insert("pip3")
+pip three: insert("pip3 ")
 
 # Lyre's Dictionary
 
