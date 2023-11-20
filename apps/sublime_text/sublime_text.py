@@ -1,11 +1,30 @@
 from talon import Context, Module, actions
 
+mod = Module()
+
 # Context matching
 ctx = Context()
 ctx.matches = r"""
 os: mac
 app: sublime_text
 """
+
+@mod.action_class
+class Actions:
+    def mark_set():
+        """Set the mark"""
+
+    def mark_clear():
+        """Clear any set mark"""
+
+    def mark_select():
+        """Select to the mark"""
+
+    def mark_delete():
+        """Delete to the mark"""
+
+    def mark_swap():
+        """Reverse lines of mark and cursor"""
 
 @ctx.action_class("app")
 class AppActions:
@@ -38,6 +57,21 @@ class UserActions:
 
     def tab_final():
         actions.key("cmd-9")
+
+    def mark_set():
+        actions.key("cmd-k cmd-m")
+
+    def mark_clear():
+        actions.key("cmd-k cmd-g")
+
+    def mark_select():
+        actions.key("cmd-k cmd-a")
+
+    def mark_delete():
+        actions.key("cmd-k cmd-w")
+
+    def mark_swap():
+        actions.key("cmd-k cmd-x")
 
 @ctx.action_class("edit")
 class EditActions:
