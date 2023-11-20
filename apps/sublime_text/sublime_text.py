@@ -28,10 +28,21 @@ class Actions:
     def mark_swap():
         """Reverse lines of mark and cursor"""
 
+    # Advanced search
+
+    def search_symbol(text: str):
+        """Search symbol in file"""
+
+    def search_symbol_everywhere(text: str):
+        """Search  symbol in any file"""
+ 
+    def search_anything(text: str):
+        """Search anything in any file"""
+
 @ctx.action_class("app")
 class AppActions:
     # Windows and tabs
-
+ 
     def preferences():
         actions.key("cmd-,")
 
@@ -80,6 +91,20 @@ class UserActions:
 
     def mark_swap():
         actions.key("cmd-k cmd-x")
+
+    # Advanced search
+
+    def search_symbol(text: str):
+        actions.key("cmd-r")
+        actions.insert(text) 
+
+    def search_symbol_everywhere(text: str):
+        actions.key("cmd-shift-r")
+        actions.insert(text)
+
+    def search_anything(text: str):
+        actions.key("cmd-p")
+        actions.insert(text)
 
 @ctx.action_class("edit")
 class EditActions:
