@@ -40,6 +40,16 @@ python three: insert("python3 ")
 pip: insert("pip ")
 pip three: insert("pip3 ")
 
+# Pyenv
+
+env activate [<user.text>]:
+    dir = text or "env"
+    insert("source {dir}/bin/activate")
+env deactivate: insert("deactivate")
+env install requirements [<user.text>]:
+    reqs = text or "requirements.txt"
+    insert("pip3 install -r {reqs}")
+
 # Lyre's Dictionary
 
 python lyre: insert("python3 lyre.py --test")
