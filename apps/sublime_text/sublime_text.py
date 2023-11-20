@@ -11,6 +11,8 @@ app: sublime_text
 
 @mod.action_class
 class Actions:
+    # Mark actions
+
     def mark_set():
         """Set the mark"""
 
@@ -28,6 +30,8 @@ class Actions:
 
 @ctx.action_class("app")
 class AppActions:
+    # Windows and tabs
+
     def preferences():
         actions.key("cmd-,")
 
@@ -51,12 +55,16 @@ class AppActions:
 
 @ctx.action_class("user")
 class UserActions:
+    # Windows and tabs
+
     def tab_jump(number: int):
         if number <= 9:
             actions.key(f"cmd-{number}")
 
     def tab_final():
         actions.key("cmd-9")
+
+    # Marks
 
     def mark_set():
         actions.key("cmd-k cmd-m")
@@ -75,6 +83,8 @@ class UserActions:
 
 @ctx.action_class("edit")
 class EditActions:
+    # Line manipulation
+
     def indent_less():
         actions.key("cmd-[")
 
@@ -99,3 +109,53 @@ class EditActions:
 class CodeActions:
     def toggle_comment():
         actions.key("cmd-/")
+
+@ctx.action_class("user")
+class FindAndReplaceActions:
+    # Find and replace
+    def find(text: str):
+        actions.key("cmd-f")
+        actions.insert(text)
+
+    def find_next():
+        actions.key("cmd-g")
+
+    def find_previous():
+        actions.key("cmd-shift-g")
+
+    def find_everywhere(text: str):
+        actions.key("cmd-shift-f")
+        actions.insert(text)
+
+    def find_toggle_match_by_case():
+        actions.key("alt-cmd-c")
+
+    def find_toggle_match_by_word():
+        actions.key("alt-cmd-w")
+
+    def find_toggle_match_by_regex():
+        actions.key("alt-cmd-r")
+
+    def replace(text: str):
+        actions.key("alt-cmd-f")
+
+    def replace_everywhere(text: str):
+        actions.key("ctrl-alt-enter")
+
+    def replace_confirm():
+        actions.key("alt-cmd-e")
+
+    def replace_confirm_all():
+        actions.key("ctrl-alt-enter")
+
+    def select_previous_occurrence(text: str):
+        actions.key("cmd-f")
+        actions.insert(text)
+        actions.key("shift-enter")
+        actions.key("escape")
+
+    def select_next_occurrence(text: str):
+        actions.key("cmd-f")
+        actions.insert(text)
+        actions.key("enter")      
+        actions.key("escape")
