@@ -54,6 +54,7 @@ env install requirements [<user.text>]:
 
 python lyre: insert("python3 lyre.py --test")
 python lyre count <number_small>: insert("python3 lyre.py --test -c {number_small}")
+python lyre diachron: insert("python3 diachron.py > out.html")
 
 # Sublime Text
 
