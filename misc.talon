@@ -1,9 +1,6 @@
+slap: key(enter)
 quit: key(escape)
 oops: user.undo()
-
-# Line manipulation
-
-snatch: mimic("cut line")
 
 # Path handling
 

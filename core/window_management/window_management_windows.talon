@@ -1,6 +1,6 @@
 os: windows
 -
-drop all: key(win-m)
+stow all: key(win-m)
 
 shove up: key(win-up)
 shove down: key(win-down)
