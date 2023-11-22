@@ -16,9 +16,9 @@ chop line: key(ctrl-k)
 paste chop: key(ctrl-y)
 
 # Process management
-kill this: key(ctrl-c)
+kill (this | that | it): key(ctrl-c)
 
-suspend: key(ctrl-z)
+(background | suspend): key(ctrl-z)
 
 foreground | resume:
     insert("fg")
