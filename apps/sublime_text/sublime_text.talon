@@ -20,3 +20,14 @@ swap mark: user.mark_swap()
 go symbol [<user.text>]: user.search_symbol(text or "")
 go symbol all [<user.text>]: user.search_symbol_everywhere(text or "")
 go anything [<user.text>]: user.search_anything(text or "")
+
+# File manipulation
+
+# Clean these up later
+file new:
+    app.tab_open()
+    key("cmd-shift-s")    
+file save: key("cmd-s")
+file save as: key("cmd-shift-s")
+file save all: key("alt-cmd-sb")
+file open: key("cmd-o")

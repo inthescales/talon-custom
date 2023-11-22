@@ -59,7 +59,7 @@ class AppActions:
         actions.key("cmd-shift-t")
 
     def window_open():
-        return
+        actions.key("cmd-shift-n")
 
     def window_close():
         actions.key("cmd-shift-w")
