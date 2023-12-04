@@ -1,6 +1,10 @@
 os: mac
 tag: terminal
 -
+# Quick actions
+
+rerun that: user.terminal_run_last()
+
 # Editing text
 clear word:
     key(alt-right)
