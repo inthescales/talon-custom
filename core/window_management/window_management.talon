@@ -1,4 +1,4 @@
 flip: user.flip()
 stow: app.window_hide()
-fill: user.fullscreen()
-unfill: user.end_fullscreen()
+fullscreen: user.fullscreen()
+unfullscreen: user.end_fullscreen()
