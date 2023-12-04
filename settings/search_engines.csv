@@ -1,6 +1,9 @@
 URL Template,Name
 https://www.amazon.com/s/?field-keywords=%s,amazon
 https://www.google.com/search?q=%s,google
-https://maps.google.com/maps?q=%s,map
+https://maps.google.com/maps?q=%s,google map
 https://scholar.google.com/scholar?q=%s,scholar
 https://en.wikipedia.org/w/index.php?search=%s,wiki
+https://en.wiktionary.org/w/index.php?go=Go&search=%s,wiktionary
+https://www.etymonline.com/search?q=%s,etymonline
+https://www.oed.com/search/dictionary/?scope=Entries&q=%s,oh ee dee
