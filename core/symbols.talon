@@ -8,6 +8,7 @@ elang: insert("<")
 arang: insert(">")
 
 snail: insert("@")
+noodle: insert("?")
 
 args empty: insert("()")
 
