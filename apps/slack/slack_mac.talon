@@ -27,6 +27,9 @@ go forward: key(cmd-])
 show downloads: key(cmd-shift-j)
 show preferences: key(cmd-,)
 
+jump (right | next): key(ctrl-cmd-left)
+jump (left | previous | last): key(ctrl-cmd-right)
+
 # Channels
 
 channel info: key(cmd-shift-i)
@@ -37,8 +40,8 @@ scroll next day: key(shift-pgdown)
 # Channel meta 
 channel (previous | last): key(alt-up)
 channel next: key(alt-down)
-channel (previous | last) unread: key(shift-alt-up)
-channel next unread: key(shift-alt-down)
+(channel) unread (previous | last): key(shift-alt-up)
+(channel) undead next: key(shift-alt-down)
 mark all read: key(shift-esc)
 
 # Messages and interactions
