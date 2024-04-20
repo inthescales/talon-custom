@@ -2,7 +2,7 @@ os: mac
 app: slack
 -
 bar (toggle | show): key(cmd-shift-d)
-(right) pane close: key(cmd-.)
+(thread | pane | right pane) close: key(cmd-.)
 
 new message: key(cmd-n)
 

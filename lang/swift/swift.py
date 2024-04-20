@@ -68,6 +68,7 @@ ctx.lists["user.code_keyword"] = {
     "try": "try ",
     "try optional": "try? ",
     "try force": "try! ",
+    "await": "await ",
     # Contextual
     "convenience": "convenience ",
     "dynamic": "dynamic",

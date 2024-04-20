@@ -12,6 +12,7 @@ file: key(cmd-shift-o)
 file name <user.text>:
     key(cmd-shift-o)
     insert(user.text)
+file reveal: key(cmd-shift-j)
 
 product run: key(cmd-r)
 product stop: key(cmd-.)
@@ -21,9 +22,12 @@ product archive: user.menu_select("Product|Archive")
 
 product clean: key(cmd-shift-k)
 
-organizer: key(cmd-shift-alt-o)
+# Windows
+
+window organizer: key(cmd-shift-alt-o)
 
 # Sidebar navigators (left side)
+
 bar (project | explore): key(cmd-1)
 bar source: key(cmd-2)
 bar symbols: key(cmd-3)
@@ -36,16 +40,19 @@ bar reports: key(cmd-9)
 bar switch: key(cmd-0)
 
 # Inspectors (right side)
+
 inspect file: key(cmd-alt-1)
 inspect history: key(cmd-alt-2)
 inspect help: key(cmd-alt-3)
 inspect switch: key(cmd-alt-0)
 
 # Debug area (bottom)
+
 bug switch: key(cmd-shift-y)
 bug console: key(cmd-shift-c)
 
 # Navigate
+
 focus editor: key(ctrl-`)
 focus next: key(cmd-alt-`)
 focus: key(cmd-j)
@@ -56,3 +63,7 @@ issue next: key(cmd-')
 issue previous: key(cmd-")
 counterpart next: key(cmd-ctrl-up)
 counterpart previous: key(cmd-ctrl-down)
+
+# Editor modes
+
+(toggle | git | show) (blame | author): key(cmd-ctrl-shift-a)
